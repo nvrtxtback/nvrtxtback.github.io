@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Houston, Texas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div id="state-logo">
+      <a href="index.html">
+        <img src="images/pngtree-waving-texas-state-flag-waving-state-symbol-vector-png-image_28927838.png" alt="Texas Logo" />
+      </a>
+    </div>
+    <nav>
+      <button onclick="location.href='capital.html'">Capital</button>
+      <button onclick="location.href='sanantonio.html'">San Antonio</button>
+      <button onclick="location.href='index.html'">Home</button>
+    </nav>
+  </header>
+
+  <main>
+    <aside>
+      <div class="signpost">
+        <div class="pole"></div>
+
+        <div class="sign-board" onclick="showFact('pop-h')"><span>Population</span></div>
+        <div class="sign-board" onclick="showFact('yr-h')"><span>Year</span></div>
+        <div class="sign-board" onclick="showFact('reg-h')"><span>Region</span></div>
+        <div class="sign-board" onclick="showFact('class-h')"><span>Classification</span></div>
+        <div class="sign-board" onclick="showFact('inc-h')"><span>Income</span></div>
+      </div>
+
+      <div id="pop-h" class="fact-popup">
+        <span class="close-btn" onclick="closeFact('pop-h')">&times;</span>
+        <p>~ 6,890,000 (2025 census)</p>
+      </div>
+
+      <div id="yr-h" class="fact-popup">
+        <span class="close-btn" onclick="closeFact('yr-h')">&times;</span>
+        <p>Incorporated June 5, 1837.</p>
+      </div>
+
+      <div id="reg-h" class="fact-popup">
+        <span class="close-btn" onclick="closeFact('reg-h')">&times;</span>
+        <p>Southeast Texas (Gulf Coast region)</p>
+      </div>
+
+      <div id="class-h" class="fact-popup">
+        <span class="close-btn" onclick="closeFact('class-h')">&times;</span>
+        <p>Urban</p>
+      </div>
+
+      <div id="inc-h" class="fact-popup">
+        <span class="close-btn" onclick="closeFact('inc-h')">&times;</span>
+        <p>Median household income: ~$62,367 (~Texas average 2025 census)</p>
+      </div>
+    </aside>
+
+    <section>
+      <div class="main-slider">
+        <div class="slide active"><img src="images/welcome to houston.png" alt="Houston Scene 1" /></div>
+        <div class="slide"><img src="images/houston restraunts.png" alt="Houston Scene 2" /></div>
+        <div class="slide"><img src="images/houston ivy university.png" alt="Houston Scene 3" /></div>
+        <div class="slide"><img src="images/houston tourist places to visit.png" alt="Houston Scene 4" /></div>
+        <div class="slide"><img src="images/houston texas local culture media.png" alt="Houston Scene 5" /></div>
+        <div class="slide"><img src="images/houston texas historical sights.png" alt="Houston Scene 6" /></div>
+
+        <div class="slider-nav">
+          <span class="dot active" onclick="setSlide(0)"></span>
+          <span class="dot" onclick="setSlide(1)"></span>
+          <span class="dot" onclick="setSlide(2)"></span>
+          <span class="dot" onclick="setSlide(3)"></span>
+          <span class="dot" onclick="setSlide(4)"></span>
+          <span class="dot" onclick="setSlide(5)"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Texas State Information Site</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Austin, Texas – The Capital</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div id="state-logo">
+      <a href="index.html">
+        <img src="images/pngtree-waving-texas-state-flag-waving-state-symbol-vector-png-image_28927838.png" alt="Texas Logo" />
+      </a>
+    </div>
+    <nav>
+      <button onclick="location.href='houston.html'">Houston</button>
+      <button onclick="location.href='sanantonio.html'">San Antonio</button>
+      <button onclick="location.href='index.html'">Home</button>
+    </nav>
+  </header>
+
+  <main>
+    <aside>
+      <div class="signpost">
+        <div class="pole"></div>
+
+        <div class="sign-board" onclick="showFact('pop')"><span>Population</span></div>
+        <div class="sign-board" onclick="showFact('yr')"><span>Year</span></div>
+        <div class="sign-board" onclick="showFact('reg')"><span>Region</span></div>
+        <div class="sign-board" onclick="showFact('class')"><span>Classification</span></div>
+        <div class="sign-board" onclick="showFact('inc')"><span>Income</span></div>
+      </div>
+
+      <div id="pop" class="fact-popup">
+        <span class="close-btn" onclick="closeFact('pop')">&times;</span>
+        <p>~ 2,313,000 (2025 estimate)</p>
+      </div>
+
+      <div id="yr" class="fact-popup">
+        <span class="close-btn" onclick="closeFact('yr')">&times;</span>
+        <p>Incorporated December 27, 1839.</p>
+      </div>
+
+      <div id="reg" class="fact-popup">
+        <span class="close-btn" onclick="closeFact('reg')">&times;</span>
+        <p>Central Texas (Capital Region)</p>
+      </div>
+
+      <div id="class" class="fact-popup">
+        <span class="close-btn" onclick="closeFact('class')">&times;</span>
+        <p>Urban</p>
+      </div>
+
+      <div id="inc" class="fact-popup">
+        <span class="close-btn" onclick="closeFact('inc')">&times;</span>
+        <p>Median household income: ~$91,461 — well above Texas average.</p>
+      </div>
+    </aside>
+
+    <section>
+      <div class="main-slider">
+        <div class="slide active"><img src="images/capital of texas welcome.png" alt="Austin Scene 1" /></div>
+        <div class="slide"><img src="images/Explore Austin Image.png" alt="Austin Scene 2" /></div>
+        <div a class="slide"><img src="images/UT Austin.png" alt="Austin Scene 3" /></div>
+        <div class="slide"><img src="images/Growing tech Markets.png" alt="Austin Scene 4" /></div>
+        <div class="slide"><img src="images/austin tx food spots.png" alt="Austin Scene 5" /></div>
+        <div class="slide"><img src="images/austin tourist attractions.png" alt="Austin Scene 6" /></div>
+
+        <div class="slider-nav">
+          <span class="dot active" onclick="setSlide(0)"></span>
+          <span class="dot" onclick="setSlide(1)"></span>
+          <span class="dot" onclick="setSlide(2)"></span>
+          <span class="dot" onclick="setSlide(3)"></span>
+          <span class="dot" onclick="setSlide(4)"></span>
+          <span class="dot" onclick="setSlide(5)"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Texas State Information Site</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

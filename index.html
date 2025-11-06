@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Texas - Welcome Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div id="state-logo">
+      <!-- Made the logo clickable -->
+      <a href="index.html">
+        <img src="images/pngtree-waving-texas-state-flag-waving-state-symbol-vector-png-image_28927838.png" alt="Texas Logo" />
+      </a>
+    </div>
+    <nav>
+      <!-- Renamed this button to say 'Capital' -->
+      <button onclick="location.href='capital.html'">Capital</button>
+      <button onclick="location.href='houston.html'">houston</button>
+      <button onclick="location.href='sanantonio.html'">sanantonio</button>
+    </nav>
+  </header>
+
+  <main>
+    <aside>
+  <div class="signpost">
+    <div class="pole"></div>
+
+    <div class="sign-board top" onclick="showFact('fact1')">
+      <span>Texas Fun Fact #1</span>
+    </div>
+
+    <div class="sign-board bottom" onclick="showFact('fact2')">
+      <span>Texas Fun Fact #2</span>
+    </div>
+  </div>
+
+  <!-- Popup Fact Boxes -->
+  <div id="fact1" class="fact-popup">
+    <span class="close-btn" onclick="closeFact('fact1')">&times;</span>
+    <p>Texas was once its own country from 1836 to 1845 before joining the U.S.!</p>
+  </div>
+
+  <div id="fact2" class="fact-popup">
+    <span class="close-btn" onclick="closeFact('fact2')">&times;</span>
+    <p>The King Ranch in Texas is larger than the entire state of Rhode Island!</p>
+  </div>
+</aside>
+
+    <section>
+      <div class="main-slider">
+        <div class="slide active">
+          <img src="images/welcome to texas main slider texas page (4).png" alt="Texas Overview 1" />
+        </div>
+        <div class="slide">
+          <img src="images/capital page.png" alt="Texas Overview 2" />
+        </div>
+        <div class="slide">
+          <img src="images/city life.png" alt="Texas Overview 3" />
+        </div>
+        <div class="slider-nav">
+          <span class="dot active" onclick="setSlide(0)"></span>
+          <span class="dot" onclick="setSlide(1)"></span>
+          <span class="dot" onclick="setSlide(2)"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Texas State Information Site</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+<a href="form.html" class="chat-bubble">
+  <img src="images/contact us logo.jpg" alt="Contact Us" />
+</a>
+
+</body>
+</html>

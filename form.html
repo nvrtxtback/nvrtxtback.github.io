@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Texas Info</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div id="state-logo">
+    <!-- Make the logo clickable to return to the home page -->
+    <a href="index.html">
+      <img src="c:\Users\nvrtx\Downloads\pngtree-waving-texas-state-flag-waving-state-symbol-vector-png-image_28927838.png" alt="Texas Logo" />
+    </a>
+  </div>
+
+  <nav>
+    <button onclick="location.href='index.html'">State Page</button>
+    <button onclick="location.href='city1.html'">City 1</button>
+    <button onclick="location.href='city2.html'">City 2</button>
+  </nav>
+</header>
+  <main>
+    <section>
+      <h2>Contact Us</h2>
+      <form onsubmit="return validateEmailMatch();">
+        <input type="text" placeholder="First Name" required /><br />
+        <input type="text" placeholder="Last Name" required /><br />
+        <input type="email" id="email" placeholder="Email Address" required /><br />
+        <input type="email" id="confirm-email" placeholder="Confirm Email Address" required /><br />
+        <textarea placeholder="Your Question" required></textarea><br />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

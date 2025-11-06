@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>San Antonio, Texas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div id="state-logo">
+      <a href="index.html">
+        <img src="images/pngtree-waving-texas-state-flag-waving-state-symbol-vector-png-image_28927838.png" alt="Texas Logo" />
+      </a>
+    </div>
+    <nav>
+      <button onclick="location.href='capital.html'">Capital</button>
+      <button onclick="location.href='houston.html'">Houston</button>
+      <button onclick="location.href='index.html'">Home</button>
+    </nav>
+  </header>
+
+  <main>
+    <aside>
+      <div class="signpost">
+        <div class="pole"></div>
+
+        <div class="sign-board" onclick="showFact('pop-sa')"><span>Population</span></div>
+        <div class="sign-board" onclick="showFact('yr-sa')"><span>Year</span></div>
+        <div class="sign-board" onclick="showFact('reg-sa')"><span>Region</span></div>
+        <div class="sign-board" onclick="showFact('class-sa')"><span>Classification</span></div>
+        <div class="sign-board" onclick="showFact('inc-sa')"><span>Income</span></div>
+      </div>
+
+      <div id="pop-sa" class="fact-popup">
+        <span class="close-btn" onclick="closeFact('pop-sa')">&times;</span>
+        <p>~ 2,525,000 (2025 estimate)</p>
+      </div>
+
+      <div id="yr-sa" class="fact-popup">
+        <span class="close-btn" onclick="closeFact('yr-sa')">&times;</span>
+        <p>Incorporated February 23, 1837.</p>
+      </div>
+
+      <div id="reg-sa" class="fact-popup">
+        <span class="close-btn" onclick="closeFact('reg-sa')">&times;</span>
+        <p>South Texas / San Antonio–New Braunfels Region</p>
+      </div>
+
+      <div id="class-sa" class="fact-popup">
+        <span class="close-btn" onclick="closeFact('class-sa')">&times;</span>
+        <p>Urban</p>
+      </div>
+
+      <div id="inc-sa" class="fact-popup">
+        <span class="close-btn" onclick="closeFact('inc-sa')">&times;</span>
+        <p>Median household income: ~$62,917 (~Texas average)</p>
+      </div>
+    </aside>
+
+    <section>
+      <div class="main-slider">
+        <div class="slide active"><img src="images/welcome to san antonio.png" alt="San Antonio Scene 1" /></div>
+        <div class="slide"><img src="images/river walk san antonio.png" alt="San Antonio Scene 2" /></div>
+        <div class="slide"><img src="images/san antonio restraunts.png" alt="San Antonio Scene 3" /></div>
+        <div class="slide"><img src="images/san antonio sights to see.png" alt="San Antonio Scene 4" /></div>
+        <div class="slide"><img src="images/san antonio native american history.png" alt="San Antonio Scene 5" /></div>
+        <div class="slide"><img src="images/san antonio education.png" alt="San Antonio Scene 6" /></div>
+
+        <div class="slider-nav">
+          <span class="dot active" onclick="setSlide(0)"></span>
+          <span class="dot" onclick="setSlide(1)"></span>
+          <span class="dot" onclick="setSlide(2)"></span>
+          <span class="dot" onclick="setSlide(3)"></span>
+          <span class="dot" onclick="setSlide(4)"></span>
+          <span class="dot" onclick="setSlide(5)"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Texas State Information Site</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -9,46 +9,67 @@
 <body>
   <header>
     <div id="state-logo">
-      <!-- Made the logo clickable -->
       <a href="index.html">
         <img src="images/pngtree-waving-texas-state-flag-waving-state-symbol-vector-png-image_28927838.png" alt="Texas Logo" />
       </a>
     </div>
     <nav>
-      <!-- Renamed this button to say 'Capital' -->
       <button onclick="location.href='capital.html'">Capital</button>
-      <button onclick="location.href='houston.html'">houston</button>
-      <button onclick="location.href='sanantonio.html'">sanantonio</button>
+      <button onclick="location.href='houston.html'">Houston</button>
+      <button onclick="location.href='sanantonio.html'">San Antonio</button>
     </nav>
   </header>
 
   <main>
     <aside>
-  <div class="signpost">
-    <div class="pole"></div>
+      <div class="signpost">
+        <div class="pole"></div>
 
-    <div class="sign-board top" onclick="showFact('fact1')">
-      <span>Texas Fun Fact #1</span>
-    </div>
+        <div class="sign-board top" onclick="showFact('fact1')">
+          <span>Texas Fun Fact #1</span>
+        </div>
 
-    <div class="sign-board bottom" onclick="showFact('fact2')">
-      <span>Texas Fun Fact #2</span>
-    </div>
-  </div>
+        <div class="sign-board bottom" onclick="showFact('fact2')">
+          <span>Texas Fun Fact #2</span>
+        </div>
+      </div>
 
-  <!-- Popup Fact Boxes -->
-  <div id="fact1" class="fact-popup">
-    <span class="close-btn" onclick="closeFact('fact1')">&times;</span>
-    <p>Texas was once its own country from 1836 to 1845 before joining the U.S.!</p>
-  </div>
+      <div id="fact1" class="fact-popup">
+        <span class="close-btn" onclick="closeFact('fact1')">&times;</span>
+        <p>Texas was once its own country from 1836 to 1845 before joining the U.S.!</p>
+      </div>
 
-  <div id="fact2" class="fact-popup">
-    <span class="close-btn" onclick="closeFact('fact2')">&times;</span>
-    <p>The King Ranch in Texas is larger than the entire state of Rhode Island!</p>
-  </div>
-</aside>
+      <div id="fact2" class="fact-popup">
+        <span class="close-btn" onclick="closeFact('fact2')">&times;</span>
+        <p>The King Ranch in Texas is larger than the entire state of Rhode Island!</p>
+      </div>
+    </aside>
 
     <section>
+      <!-- UNORDERED + ORDERED LIST ADDED -->
+      <h2>Major Regions of Texas</h2>
+      <ul>
+        <li>North Texas</li>
+        <li>South Texas</li>
+        <li>West Texas</li>
+      </ul>
+
+      <h2>Top 3 Biggest Cities (by population)</h2>
+      <ol>
+        <li>Houston</li>
+        <li>San Antonio</li>
+        <li>Dallas</li>
+      </ol>
+
+      <!-- TABLE ADDED -->
+      <h2>Quick Comparison</h2>
+      <table border="1" cellpadding="6">
+        <tr><th>City</th><th>Population (Approx.)</th><th>Region</th></tr>
+        <tr><td>Houston</td><td>2.3M</td><td>South East</td></tr>
+        <tr><td>San Antonio</td><td>2.1M</td><td>South Central</td></tr>
+        <tr><td>Austin</td><td>1M</td><td>Central</td></tr>
+      </table>
+
       <div class="main-slider">
         <div class="slide active">
           <img src="images/welcome to texas main slider texas page (4).png" alt="Texas Overview 1" />
@@ -65,6 +86,10 @@
           <span class="dot" onclick="setSlide(2)"></span>
         </div>
       </div>
+
+      <!-- External Link Requirement -->
+      <p class="info-box">Learn more at <a href="https://travel.texas.gov" target="_blank">Travel Texas Official Website</a>.</p>
+
     </section>
   </main>
 
@@ -74,10 +99,10 @@
 
   <script src="script.js"></script>
 
-
-<a href="form.html" class="chat-bubble">
-  <img src="images/contact us logo.jpg" alt="Contact Us" />
-</a>
+  <a href="form.html" class="chat-bubble">
+    <img src="images/contact us logo.jpg" alt="Contact Us" />
+  </a>
 
 </body>
+
 </html>
